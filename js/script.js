@@ -50,7 +50,7 @@ $(function() {
                             .call(xAxis);
 
         svg.append('text')
-            .attr('transform', 'translate(' +  (drawWidth / 2) + ', ' + (margin.top + drawHeight + 120) + ')')
+            .attr('transform', 'translate(' +  (drawWidth / 2) + ', ' + (margin.top + drawHeight + 50) + ')')
             .attr('class', 'axis-label')
             .text('Device-App Combinations');
 
@@ -63,6 +63,25 @@ $(function() {
             .attr('transform', 'translate(' + (margin.left - 50) + ', ' + (margin.top + drawHeight / 2) + ') rotate(-90)')
             .attr('class', 'axis-label')
             .text('Count');
+
+        $("input").on('change', function() {
+            var val = $(this).val();
+            //var yData = data.map(function(d) { return d.Economy; });
+            if (val == 'family') {
+                var yData = data.map(function(d) { return d.Family; });
+            } else if (val == 'health') {
+                var yData = data.map(function(d) { return d.Health; });
+            } else if (val == 'freedom') {
+                var yData = data.map(function(d) { return d.Freedom; });
+            } else if (val == 'trust') {
+                var yData = data.map(function(d) { return d.Trust; });
+            } else if (val == 'generosity') {
+                var yData = data.map(function(d) { return d.Generosity; });
+            } else {
+                var yData = data.map(function(d) { return d.Economy; });
+            }
+            console.log(yData);                                                             
+        })
     });
 
 });
