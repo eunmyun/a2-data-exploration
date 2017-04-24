@@ -11,11 +11,16 @@
     <!--Your stylesheet-->
     <link rel="stylesheet" href="css/main.css">
 
-    <!--D3 CDN-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.4/d3.min.js"></script>
-
     <!-- Load jQuery library -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--D3 CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.4/d3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+    
 
     <!--Your script-->
     <script src="js/script.js"></script>
@@ -36,24 +41,24 @@
 
         <!--Create a svg with an id of viz-->
         <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-primary active">
-				<input value="economy" type="radio" name="options" id="economy" autocomplete="off" checked>Economy
-			</label>
-        <label class="btn btn-primary">
-				<input value="family" type="radio" name="options" id="family" autocomplete="off" >Family
-			</label>
-        <label class="btn btn-primary">
-				<input value="health" type="radio" name="options" id="health" autocomplete="off">Health
-			</label>
-        <label class="btn btn-primary">
-				<input value="freedom" type="radio" name="options" id="freedom" autocomplete="off">Freedom
-			</label>
-        <label class="btn btn-primary">
-				<input value="trust" type="radio" name="options" id="trust" autocomplete="off">Trust
-			</label>
-        <label class="btn btn-primary">
-				<input value="generosity" type="radio" name="options" id="generosity" autocomplete="off">Generosity
-			</label>
+            <label class="btn btn-primary active">
+                <input value="economy" type="radio" name="options" id="option1" autocomplete="off" checked>Economy
+            </label>
+            <label class="btn btn-primary">
+                <input value="family" type="radio" name="options" id="option2" autocomplete="off" >Family
+            </label>
+            <label class="btn btn-primary">
+                <input value="health" type="radio" name="options" id="option3" autocomplete="off">Health
+            </label>
+            <label class="btn btn-primary">
+                <input value="freedom" type="radio" name="options" id="option4" autocomplete="off">Freedom
+            </label>
+            <label class="btn btn-primary">
+                <input value="trust" type="radio" name="options" id="option5" autocomplete="off">Trust
+            </label>
+            <label class="btn btn-primary">
+                <input value="generosity" type="radio" name="options" id="option6" autocomplete="off">Generosity
+            </label>
         </div>
         <div id="vis"></div>
     </div>
