@@ -25,11 +25,3 @@ h1, h2, h3 {
     fill: none;
     stroke: #BBB;
 }
-
-.bar {
-    fill: #468966;
-}
-
-.bar:hover {
-    fill: #bf360c;
-}
